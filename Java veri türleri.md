@@ -15,13 +15,16 @@
 - Daha yavaştırlar, çünkü bellekteki referanslar aracılığıyla işlenirler.
 - non-primitive type'ların kullanılmayanları Garbage collector tarafından toplanır.
 
-# Garbage Collector'ın Çalışma Prensibi:
+# Garbage Collector'ın Çalışma Prensibi
 Java'da, nesneler heap adı verilen bellek alanında depolanır. Bir nesneye referans edilmediğinde, yani programda artık o nesneye ulaşılmıyorsa, garbage collector devreye girer ve bu nesneyi bellekten temizler. Böylece bellekte boş alan açılır ve yeni nesneler için yer sağlanmış olur.
 
-**Garbage Collector'ın Temel Görevleri:**
-Bellek Yönetimi: Kullanılmayan nesneleri tespit eder ve bellekten temizler.
-Bellek Sızıntılarını Önleme: Kendi başına bellek yönetimi yaparken oluşabilecek bellek sızıntılarını önler.
-Programın Performansını Arttırma: Bellekte gereksiz yer işgal eden nesneleri temizleyerek daha verimli bir bellek kullanımı sağlar.
+### Garbage Collector'ın Temel Görevleri
+
+**Bellek Yönetimi:** Kullanılmayan nesneleri tespit eder ve bellekten temizler.
+
+**Bellek Sızıntılarını Önleme:** Kendi başına bellek yönetimi yaparken oluşabilecek bellek sızıntılarını önler.
+
+**Programın Performansını Arttırma:** Bellekte gereksiz yer işgal eden nesneleri temizleyerek daha verimli bir bellek kullanımı sağlar.
 
 # Java'nın Neden Garbage Collector'a İhtiyacı Var?
 Java'da garbage collector, C ve C++ gibi dillerdeki manuel bellek yönetiminden farklıdır. Bu dillerde bellekten silinmesi gereken nesneleri programcının manuel olarak temizlemesi gerekir (örneğin, malloc ve free gibi fonksiyonlar kullanılır). Java'da bu iş, garbage collector tarafından yapılır ve böylece olası bellek sızıntıları ya da program çökmelerinin önüne geçilir.
