@@ -1,1 +1,0 @@
-<h1> JAVA MÜLAKAT SORULARI </h1>
