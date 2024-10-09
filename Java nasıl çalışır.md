@@ -1,6 +1,6 @@
-<h1> JAVA MÜLAKAT SORULARI </h1>
+<h1> JAVA NASIL ÇALIŞIR </h1>
 
-<h2>Java nasıl çalışır ? :</h2>
+
 
 ![image](https://github.com/user-attachments/assets/4790d1bb-583c-4457-9a04-8bd0223c8186)
 
@@ -65,3 +65,18 @@ Derleme: javac komutu ile bytecode'a çevrilir (.class dosyası).
 Bytecode: Bu bytecode her platformda aynıdır ve taşınabilir.
 Çalıştırma: JVM bytecode'u yükler, doğrular, ve çalıştırır. (Yorumlayıcı veya JIT kullanılır.)
 Sonuç: Program işletim sistemi ve donanım üzerinde çalışır ve çıktı üretir.
+
+
+![image](https://github.com/user-attachments/assets/ec9438e0-39bb-4a23-98d1-461cd3e9fa51)
+
+
+# JVM (Java Virtual Machine) nedir?
+JVM (Java Virtual Machine), Java programlarının çalıştığı sanal bir platformdur. Bir Java programı yazıldığında, bu program önce derlenir ve bytecode denilen ara bir dile dönüştürülür. Bu bytecode, platformdan bağımsızdır; yani Windows, macOS veya Linux gibi farklı işletim sistemlerinde aynı bytecode çalışabilir. İşte bu noktada JVM devreye girer. JVM, bytecode'u alır ve çalıştırılabilir makine koduna dönüştürür. JVM, Java’nın en önemli bileşenlerinden biridir çünkü Java'nın platform bağımsızlığını sağlar. JVM aynı zamanda bellek yönetimi ve güvenlik denetimi gibi görevleri de üstlenir.
+
+# JRE (Java Runtime Environment) nedir?
+JRE (Java Runtime Environment), Java programlarını çalıştırmak için gereken ortamdır. JRE, JVM'i ve Java'nın çalışması için gerekli olan tüm kütüphaneleri (class libraries) içerir. Eğer sadece Java programlarını çalıştırmak istiyorsanız, JRE yeterlidir. JRE, Java'nın çalışma zamanında ihtiyaç duyduğu her şeyi sağlar; yani bir Java programı derlendikten sonra çalıştırılmak istendiğinde, JRE devreye girer ve JVM'in de yardımıyla programın çalışmasını sağlar. Ancak JRE, Java kodu yazmak ya da derlemek için kullanılan bir araç değildir, sadece çalıştırma görevini yerine getirir.
+
+# JDK (Java Development Kit) nedir?
+JDK (Java Development Kit) ise Java geliştiricilerinin kullandığı bir araç setidir. JDK, hem JRE'yi hem de Java kodlarını yazıp derlemek için gerekli olan araçları içerir. Örneğin, javac adı verilen derleyici JDK'nın içindedir ve bu araç Java kaynak kodunu (örneğin .java dosyaları) bytecode'a (.class dosyaları) dönüştürür. Ayrıca JDK, Java programlarının geliştirilmesi sırasında kullanılan diğer araçları da içerir. Bu nedenle, eğer Java kodu yazmak ve derlemek istiyorsanız, JRE yeterli olmaz, JDK'ya ihtiyacınız vardır.
+
+Sonuç olarak, JVM, Java bytecode'unu çalıştıran sanal makinedir; JRE, Java programlarını çalıştırmak için gerekli ortamdır ve JVM'i içerir; JDK ise Java uygulamalarını geliştirmek ve derlemek için gerekli olan bir araç setidir ve JRE'yi de kapsar.
