@@ -30,21 +30,21 @@ Bu bytecode platform bağımsızdır. Yani bu bytecode, hangi işletim sistemind
 # 3. Bytecode Taşınması
 Oluşturulan HelloWorld.class dosyası, yerel bir sistemde veya bir ağ üzerinden başka bir bilgisayara taşınabilir. Java'nın bu özelliği, kodun bir kez yazılıp her platformda çalışabilmesini sağlar.
 
-4. Çalışma Zamanı Ortamı (Run-time Environment)
+ # 4. Çalışma Zamanı Ortamı (Run-time Environment)
 Bytecode, artık Java'nın Çalışma Zamanı Ortamı (JRE - Java Runtime Environment) ile çalıştırılmaya hazırdır. Burada birkaç önemli bileşen devreye girer:
 
-Sınıf Yükleyici (Class Loader): HelloWorld.class dosyasındaki bytecode belleğe yüklenir. Sınıf yükleyici, çalıştırılacak sınıfı bulur ve belleğe yerleştirir.
+**Sınıf Yükleyici (Class Loader):** HelloWorld.class dosyasındaki bytecode belleğe yüklenir. Sınıf yükleyici, çalıştırılacak sınıfı bulur ve belleğe yerleştirir.
 
-Bytecode Doğrulayıcı (Bytecode Verifier): Belleğe yüklenen bytecode, güvenlik açısından kontrol edilir. Java, güvenlik açısından oldukça katıdır, bu yüzden bytecode'un düzgün ve güvenli olup olmadığını kontrol eder. Yanlış, bozuk veya zararlı kodlar varsa çalışma durdurulur.
+**Bytecode Doğrulayıcı (Bytecode Verifier):** Belleğe yüklenen bytecode, güvenlik açısından kontrol edilir. Java, güvenlik açısından oldukça katıdır, bu yüzden bytecode'un düzgün ve güvenli olup olmadığını kontrol eder. Yanlış, bozuk veya zararlı kodlar varsa çalışma durdurulur.
 
-5. Çalışma Sistemi (Runtime System)
+# 5. Çalışma Sistemi (Runtime System)
 Belleğe yüklenen ve doğrulanan bytecode, JVM (Java Virtual Machine) tarafından çalıştırılmaya başlar. JVM, iki farklı yol ile bytecode'u çalıştırabilir:
 
-Java Yorumlayıcı (Java Interpreter): Bytecode'u satır satır okur ve her satırı anında çalıştırır. Bu yöntem biraz daha yavaş olabilir çünkü her satırda bytecode tekrar yorumlanır.
+**Java Yorumlayıcı (Java Interpreter):** Bytecode'u satır satır okur ve her satırı anında çalıştırır. Bu yöntem biraz daha yavaş olabilir çünkü her satırda bytecode tekrar yorumlanır.
 
-Anında Derleyici (Just-in-time Compiler - JIT): JVM, bytecode'u optimize ederek makine diline çevirir ve daha hızlı çalışması için yerel makine kodu olarak çalıştırır. Bu yöntem, performans açısından daha hızlıdır. JVM, sık kullanılan kod parçalarını makine diline çevirip tekrar kullanır.
+**Anında Derleyici (Just-in-time Compiler - JIT):** JVM, bytecode'u optimize ederek makine diline çevirir ve daha hızlı çalışması için yerel makine kodu olarak çalıştırır. Bu yöntem, performans açısından daha hızlıdır. JVM, sık kullanılan kod parçalarını makine diline çevirip tekrar kullanır.
 
-6. İşletim Sistemi ve Donanım (Operating System & Hardware)
+# 6. İşletim Sistemi ve Donanım (Operating System & Hardware)
 Son olarak, JVM tarafından çalıştırılan bytecode, işletim sistemi üzerinden donanıma iletilir. Java programı, işletim sistemi üzerinde çalışırken işlemcide gerekli işlemleri yapar.
 
 Örneğin, HelloWorld.class dosyasını çalıştırmak için şu komut kullanılır:
@@ -59,7 +59,7 @@ Hello, World!
 ```
 Bu şekilde, Java'da yazılan bir kodun nasıl derlenip çalıştığı adım adım gerçekleşir.
 
-Sürecin Özeti:
+**Sürecin Özeti:**
 Yazma: Java kodu .java dosyasına yazılır.
 Derleme: javac komutu ile bytecode'a çevrilir (.class dosyası).
 Bytecode: Bu bytecode her platformda aynıdır ve taşınabilir.
