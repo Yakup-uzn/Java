@@ -64,7 +64,7 @@ Yazma: Java kodu .java dosyasına yazılır.
 Derleme: javac komutu ile bytecode'a çevrilir (.class dosyası).
 Bytecode: Bu bytecode her platformda aynıdır ve taşınabilir.
 Çalıştırma: JVM bytecode'u yükler, doğrular, ve çalıştırır. (Yorumlayıcı veya JIT kullanılır.)
-Sonuç: Program işletim sistemi ve donanım üzerinde çalışır ve çıktı üretir.
+Sonuç: Program işletim sistemi ve donanım üzerinde çalışır ve çıktı üretir.Java hem derlenen hem de yorumlanan bir dildir.
 
 
 ![image](https://github.com/user-attachments/assets/ec9438e0-39bb-4a23-98d1-461cd3e9fa51)
